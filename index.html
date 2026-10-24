@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GhostRP | Minecraft Roleplay</title>
+  <meta name="description" content="Benvenuto su GhostRP, il tuo mondo Minecraft Roleplay.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #090810;
+      color: #f5f2ff;
+    }
+    header {
+      display: flex; justify-content: space-between;
+      align-items: center; padding: 22px 8%;
+      border-bottom: 1px solid #292039;
+      background: #0d0b16;
+    }
+    .logo { font-size: 25px; font-weight: 900; color: #bd8aff; }
+    nav a {
+      color: #eee7ff; text-decoration: none;
+      margin-left: 22px; font-size: 14px;
+    }
+    nav a:hover { color: #bd8aff; }
+    .hero {
+      min-height: 540px; display: flex;
+      flex-direction: column; justify-content: center;
+      align-items: center; text-align: center;
+      padding: 70px 20px;
+      background: radial-gradient(ellipse at top, #342052 0%, #151020 45%, #090810 78%);
+    }
+    .tag {
+      border: 1px solid #8154b7; border-radius: 30px;
+      padding: 9px 16px; color: #d7b7ff;
+      font-size: 12px; letter-spacing: 2px;
+    }
+    h1 { font-size: clamp(48px, 9vw, 90px); margin: 25px 0 15px; }
+    h1 span { color: #bd8aff; }
+    .hero p { max-width: 600px; color: #c6bfd4; line-height: 1.8; }
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
+    .btn {
+      display: inline-block; padding: 14px 22px; border-radius: 8px;
+      text-decoration: none; font-weight: bold;
+    }
+    .primary { background: #a56bea; color: #10091a; }
+    .secondary { border: 1px solid #5b456f; color: white; }
+    section { padding: 70px 8%; }
+    .section-title { text-align: center; font-size: 32px; margin-bottom: 12px; }
+    .subtitle { text-align: center; color: #aaa1ba; margin-bottom: 35px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card {
+      background: #14111f; border: 1px solid #30253f;
+      border-radius: 14px; padding: 28px;
+    }
+    .card .icon { font-size: 30px; margin-bottom: 18px; }
+    .card h3 { margin-bottom: 12px; color: #d2afff; }
+    .card p { color: #b7afc5; line-height: 1.7; font-size: 14px; }
+    .join { text-align: center; background: #120e1b; }
+    .join p { color: #b7afc5; margin: 18px auto 25px; line-height: 1.8; }
+    footer { text-align: center; padding: 25px; color: #898197; border-top: 1px solid #292039; font-size: 13px; }
+    @media(max-width: 600px) {
+      header { flex-direction: column; gap: 18px; }
+      nav a { margin: 0 7px; }
+      section { padding: 55px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">👻 GhostRP</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#modalita">Modalità</a>
+      <a href="#regole">Regolamento</a>
+      <a href="#entra">Entra</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="tag">MINECRAFT ROLEPLAY</div>
+      <h1>VIVI LA TUA <span>STORIA.</span></h1>
+      <p>Una città, infinite possibilità. Crea il tuo personaggio,
+      trova lavoro, costruisci relazioni e scrivi la tua storia
+      nel mondo di GhostRP.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#entra">Scopri come entrare</a>
+        <a class="btn secondary" href="#modalita">Scopri il server</a>
+      </div>
+    </section>
+
+    <section id="modalita">
+      <h2 class="section-title">La tua nuova vita</h2>
+      <p class="subtitle">Scegli chi diventare nella città di GhostRP.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🚔</div>
+          <h3>Forze dell'ordine</h3>
+          <p>Proteggi la città, svolgi indagini e fai rispettare la legge.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🔧</div>
+          <h3>Lavora e guadagna</h3>
+          <p>Trova un impiego, guadagna denaro e costruisci il tuo futuro.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🏙️</div>
+          <h3>Vita in città</h3>
+          <p>Incontra altri giocatori, crea amicizie e vivi nuove avventure.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="regole">
+      <h2 class="section-title">Il regolamento</h2>
+      <p class="subtitle">Rispetta gli altri giocatori e contribuisci a un RP divertente.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Rispetto</h3>
+          <p>Niente insulti, molestie o comportamenti tossici verso gli altri.</p>
+        </article>
+        <article class="card">
+          <h3>Roleplay corretto</h3>
+          <p>Rispetta le regole RP ufficiali e le decisioni dello staff.</p>
+        </article>
+        <article class="card">
+          <h3>Fair play</h3>
+          <p>Non usare cheat, exploit o vantaggi illeciti.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="join" id="entra">
+      <h2 class="section-title">Pronto a entrare?</h2>
+      <p>Unisciti alla community GhostRP e inizia a scrivere la tua storia.</p>
+      <div class="buttons">
+        <!-- Sostituisci # con il link vero del tuo Discord -->
+        <a class="btn primary" href="#">Entra nel Discord</a>
+        <!-- Inserisci qui l'IP del server quando è pronto -->
+        <a class="btn secondary" href="#entra">IP SERVER: DA INSERIRE</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 GhostRP · Minecraft Roleplay · Server indipendente
+  </footer>
+</body>
+</html>
